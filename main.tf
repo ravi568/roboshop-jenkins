@@ -19,3 +19,15 @@ resource "jenkins_job" "job" {
 
 }
 
+data "aws_instance" "jenkins" {
+  instance_id = 'i-0083214a6bd72fd84'
+}
+
+resource "aws_route53_record" "jenkins" {
+  zone_id = "Z04953962FKYDA691J60N"
+  name    = "jenkins.kalluriravidevops71.online"
+  type    = "A"
+  ttl     = 300
+  records = [data.aws_instance.jenkins.public_ip]
+}
+
