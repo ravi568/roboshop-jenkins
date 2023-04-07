@@ -12,6 +12,8 @@ resource "jenkins_job" "job" {
 
   template = templatefile("${path.module}/sb-job.xml", {
     repo_url= lookup(element(var.jobs, count.index), "repo_url", null)
+    name= lookup(element(var.jobs, count.index), "name", null)
+
   })
   lifecycle {
     ignore_changes = [template]
