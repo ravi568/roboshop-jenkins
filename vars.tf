@@ -2,7 +2,7 @@ variable "folders"{
   default = ["infra", "CI-Pipeline"]
 }
 
-variable "jobs" {
+variable "m-jobs" {
 
   default = [
     { name = "roboshop", folder = "infra" , repo_url= "https://github.com/ravi568/roboshop-infra" },
@@ -14,4 +14,15 @@ variable "jobs" {
     { name = "payment", folder = "CI-Pipeline" , repo_url= "https://github.com/ravi568/payment" }
 
     ]
+}
+
+variable "s-jobs" {
+
+  default = [
+    { name = "roboshop", folder = "infra" , repo_url= "https://github.com/ravi568/roboshop-infra" }
+  ]
+}
+
+variable "force" {
+  default = false
 }
