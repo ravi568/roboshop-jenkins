@@ -11,7 +11,8 @@ variable "m-jobs" {
     { name = "user", folder = "CI-Pipeline" , repo_url= "https://github.com/ravi568/user" },
     { name = "shipping", folder = "CI-Pipeline" , repo_url= "https://github.com/ravi568/shipping" },
     { name = "payment", folder = "CI-Pipeline" , repo_url= "https://github.com/ravi568/payment" },
-    { name = "aws-ssm-param-store", folder = "CI-Pipeline" , repo_url= "https://github.com/ravi568/aws-ssm-param-store" }
+    { name = "aws-ssm-param-store", folder = "CI-Pipeline" , repo_url= "https://github.com/ravi568/aws-ssm-param-store" },
+    { name = "schema-loader", folder = "CI-Pipeline" , repo_url= "https://github.com/ravi568/schema-loader" }
 
     ]
 }
